@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="AOP-LIB">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../Session8/AOP-LIB" />
+      <root url="file://$PROJECT_DIR$/../../Session8/JPA-LIB" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../Session8/AOP-LIB" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../Session8/JPA-LIB" recursive="false" />
+  </library>
+</component>
