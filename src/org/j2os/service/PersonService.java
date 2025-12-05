@@ -6,6 +6,7 @@ import org.j2os.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -27,7 +28,7 @@ public class PersonService {
     @Autowired
     private HelperService helperService;
 
-    @Transactional(propagation = Propagation.REQUIRED)
+    @Transactional(propagation = Propagation.REQUIRED, isolation = Isolation.DEFAULT)
     public void SavePerson(Person person){
 
         for (Car car : person.getCarList()){
